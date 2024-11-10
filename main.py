@@ -38,7 +38,7 @@ def main():
             for shot in shots:
                 if shot.check_collision(item):
                     shot.kill()
-                    item.kill()
+                    item.split()
         for item in drawable:
             item.draw(screen)
         pygame.display.flip()
